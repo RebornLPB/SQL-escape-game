@@ -67,4 +67,18 @@ action.
 This proves that Mickael is the guilty. He stole others staff members account to
 remove "Campement 7".
 
+# 4:57:
+Conclusion:
+The channel "Campement 7" (ID: 7).
+The event "theft" (id: 5).
+The guilty one: "Mickael" (id: 3) operating from "poste-07"
 
+Mickael stone and used other member's credentials to carry out the attack:
+- Anthony's account (id: 2) used at 08:51 to export the data and
+at 08:52 to archive the channel.
+- Kevin's account (id: 1) used at 08:57 to attempt a rename action
+(wich didn't works since we can see that the channel_name is still "Campement 7)
+
+Result:
+Mickael is responsible for the disappearance of "Campement 7"
+by usurping Anthony and Kevin's account from workstation "poste-07"
