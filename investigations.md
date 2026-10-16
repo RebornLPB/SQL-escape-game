@@ -39,3 +39,32 @@ We need to know who's the member 3 now; lets simply do this with the command:
 ...
 The member is Mickael. Now let's try to find more informations on this case.
 
+
+# 4:50:
+My next commands will simply help us to check Mickael's logs:
+SELECT
+    al.log_id,
+    al.occurred_at,
+    al.action,
+    al.device,
+    al.credential_owner_id,
+    al.actor_id,
+    m.display_name AS owner_name
+FROM access_logs al
+JOIN members m ON al.credential_owner_id = m.member_id
+WHERE al.credential_owner_id = 3 OR al.actor_id = 3;
+
+With this command; there's multiple informations.
+First of all:
+the device used in thoses logs is the "poste-07".
+The actor_id (who did it) is... Mickael. (Of course, we're looking at his logs..)
+We can see that Mickael made multiple actions using other people's credentials:
+- 08:51, he used Anthony's account (credentials_owner_id= 2) to do an "export"
+- 08:52, still on Anthony's account, he made an "archive" action
+- 08:37, this time on Kevin's account (credentials_owner_id= 1) he made a "Rename"
+action.
+
+This proves that Mickael is the guilty. He stole others staff members account to
+remove "Campement 7".
+
+
