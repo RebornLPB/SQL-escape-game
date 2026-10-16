@@ -32,3 +32,10 @@ The event_type and evidence_tag clearly say "Theft".
 Another piece of information that we can get here is the member_id (3).
 We can clearly see that we're looking at an event from "Campement 7"
 since the channel_id is the same one that we got earlier (7).
+
+# 4:40:
+We need to know who's the member 3 now; lets simply do this with the command:
+"SELECT * FROM members WHERE member_id = 3;"
+...
+The member is Mickael. Now let's try to find more informations on this case.
+
