@@ -14,3 +14,11 @@ actor_id
 If credential_owner_id is not equals to actor_id,
 we can clearly see who stole the account
 
+# 4:30:
+We can also see that there's an "evidence_tag" in the events table.
+This will be really usefull too. Keep that in mind.
+
+# 4:33:
+With the command: "SELECT * FROM channels;" we can get the channel ID and basics
+informations, such as the name (we already know wich one we're looking for)
+or even the channel_type, status and when it has been created.
