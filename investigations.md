@@ -22,3 +22,13 @@ This will be really usefull too. Keep that in mind.
 With the command: "SELECT * FROM channels;" we can get the channel ID and basics
 informations, such as the name (we already know wich one we're looking for)
 or even the channel_type, status and when it has been created.
+Keep in mind: Channel id = 7.
+
+# 4:38:
+After this, we can look into the events table with the command:
+"SELECT * FROM events;"
+We can clearly see that one event is suspicious: event 5 (its ID).
+The event_type and evidence_tag clearly say "Theft".
+Another piece of information that we can get here is the member_id (3).
+We can clearly see that we're looking at an event from "Campement 7"
+since the channel_id is the same one that we got earlier (7).
